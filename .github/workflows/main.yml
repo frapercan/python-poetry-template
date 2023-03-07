@@ -23,5 +23,7 @@ jobs:
         run: | 
               poetry install 
               pip3 install coverage
+              pip3 install pytest
+
       - name: test
         run: coverage run -m pytest && poetry run coverage report -m
