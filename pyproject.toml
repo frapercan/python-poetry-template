@@ -13,9 +13,13 @@ pytest = "^7.2.2"
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
 flake8-bugbear = "^23.2.13"
+coverage = {extras = ["toml"], version = "^7.2.1"}
 
+[tool.coverage.run]
+omit = ["*/site-packages/*"]
 
-
+[tool.coverage.report]
+fail_under = 100
 
 
 

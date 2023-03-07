@@ -1,4 +1,4 @@
-
+from template.main import square
 
 def test_version():
-    assert 1 == 1
+    assert square(2) == 4
