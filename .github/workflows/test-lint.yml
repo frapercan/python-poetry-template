@@ -1,4 +1,4 @@
-name: Test Coverage
+name: Testing format with flake (Linting)
 on: push
 
 jobs:
