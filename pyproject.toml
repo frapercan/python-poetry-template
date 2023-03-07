@@ -6,6 +6,8 @@ authors = ["frapercan <frapercan1@alum.us.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.2"
@@ -26,3 +28,6 @@ fail_under = 100
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test = "coverage run -m pytest && poetry run coverage report -m"
