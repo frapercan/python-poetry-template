@@ -6,11 +6,13 @@ authors = ["frapercan <frapercan1@alum.us.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pytest-cov = "^4.0.0"
-coverage = "^7.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.2"
+coverage = "^7.2.1"
+pytest-cov = "^4.0.0"
+
+
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^6.0.0"
