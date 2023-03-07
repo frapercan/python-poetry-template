@@ -15,3 +15,4 @@ def square(num: Union[int, float]):
         Squared argument
     """
     return num**2
+
