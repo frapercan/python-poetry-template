@@ -21,9 +21,7 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
       - name: install dependecies
         run: | 
-              poetry install 
-              pip3 install coverage
-              pip3 install pytest
+              poetry install
 
       - name: flake8
         run: poetry run flake8 template
