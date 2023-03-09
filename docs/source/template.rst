@@ -6,7 +6,7 @@ Functions
 Math
 -----------
 
-.. automodule:: template.main
+.. automodule:: python_poetry_template.maths
 	:members:
 	:inherited-members:
 
