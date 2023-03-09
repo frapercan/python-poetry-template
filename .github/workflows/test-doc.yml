@@ -1,5 +1,11 @@
 name: Compile sphinx documentation
 
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+
 jobs:
   ci:
     strategy:
