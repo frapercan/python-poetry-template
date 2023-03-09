@@ -1,4 +1,4 @@
-name: Testing format with flake (Linting)
+name: Pipy publish
 on: push
 
 jobs:
