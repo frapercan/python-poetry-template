@@ -6,8 +6,6 @@ authors = ["frapercan <frapercan1@alum.us.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-coverage = {extras = ["toml"], version = "^7.2.1"}
-pytest = "^7.2.2"
 
 
 [tool.poetry.dev-dependencies]
