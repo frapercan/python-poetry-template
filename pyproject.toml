@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "template"
+name = "python-poetry-template"
 version = "0.2.0"
 description = ""
 authors = ["frapercan <frapercan1@alum.us.es>"]
@@ -27,8 +27,8 @@ fail_under = 100
 
 [tool.taskipy.tasks]
 html_docs = "make html -C docs"
-lint = "poetry run flake8 template"
-coverage = "poetry run coverage run -m --source=template pytest tests && poetry run coverage report -m"
+lint = "poetry run flake8 python_poetry_template"
+coverage = "poetry run coverage run -m --source=python_poetry_template pytest tests && poetry run coverage report -m"
 
 
 
