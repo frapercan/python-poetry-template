@@ -1,10 +1,7 @@
 name: Compile sphinx documentation
 
 on:
-  pull_request:
-    branches:
-      - main
-      - dev
+  push
 
 jobs:
   ci:
@@ -25,8 +22,7 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: install dependecies
-        run: | 
-              poetry install
+        run: poetry install
 
       - name: doc_compile
         run: poetry run task html_docs

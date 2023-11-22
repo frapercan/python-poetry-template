@@ -6,7 +6,7 @@ Functions
 Math
 -----------
 
-.. automodule:: template.main
+.. automodule:: template.maths
 	:members:
 	:inherited-members:
 
