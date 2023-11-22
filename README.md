@@ -1,6 +1,7 @@
-[![codecov](https://codecov.io/gh/frapercan/experience-recorder/branch/main/graph/badge.svg?token=hIyfvLsU2D)](https://codecov.io/gh/frapercan/experience-recorder)
-[![PyPI version](https://badge.fury.io/py/experience_recorder.svg)](https://badge.fury.io/py/experience_recorder)
-[![Documentation Status](https://readthedocs.org/projects/experience-recorder/badge/?version=latest)](https://experience-recorder.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/frapercan/python-poetry-template/graph/badge.svg?token=hqzrADVeRy)](https://codecov.io/gh/frapercan/python-poetry-template)
+[![PyPI version](https://badge.fury.io/py/python-poetry-template.svg)](https://badge.fury.io/py/python-poetry-template)
+[![Documentation Status](https://readthedocs.org/projects/python-poetry-template/badge/?version=latest)](https://python-poetry-template.readthedocs.io/en/latest/?badge=latest)
+![Linting Status](https://github.com/frapercan/python-poetry-template/actions/workflows/test-lint.yml/badge.svg?branch=main)
 
 # Python Poetry Template
 
