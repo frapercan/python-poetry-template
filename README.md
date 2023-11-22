@@ -24,7 +24,7 @@ Para configurar el entorno de desarrollo:
 3. Ejecute `poetry install` para instalar las dependencias del proyecto.
 
 ## Renombrar el contenedor principal de código
-El código se encuentra por defecto bajo el directorio **`template`**, debemos renombrarla, al nombre deseado.
+El código se encuentra por defecto bajo el directorio **`python_poetry_template`**, debemos renombrarla, al nombre deseado.
 
 ## Configuración de *pyproject.toml* 
 Asegúrate de que tu archivo **`pyproject.toml`** esté correctamente configurado. Esto incluye especificar el nombre del paquete, la versión, la descripción, los autores y cualquier otra información relevante que PyPI necesite para mostrar tu paquete correctamente.
@@ -51,7 +51,7 @@ coverage = "poetry run coverage run -m --source=<ruta-directorio-principal> pyte
 En el fichero de configuración de sphinx **`docs/source/conf.py`** debemos configurar con los valores de nuestro proyecto.
 
 ```python
-project = 'template'
+project = 'python_poetry_template'
 copyright = '2023, frapercan'
 author = 'frapercan'
 ```
@@ -187,6 +187,15 @@ Realiza pruebas con Pytest y genera un informe de cobertura con Coverage.
 ## Publicación del Paquete
 Para compilar y publicar tu paquete Python utilizando Poetry, sigue estos pasos:
 
+### Aumentar la versión del proyecto.
+```bash
+poetry version minor
+```
+
+```bash
+poetry version major
+```
+
 ### Compilación del Paquete
 Antes de publicar, es una buena práctica compilar el paquete para asegurarse de que todo esté configurado correctamente. Para compilar tu paquete, ejecuta:
 ```bash
@@ -200,4 +209,14 @@ Una vez que hayas compilado tu paquete, puedes publicarlo en [PyPI](https://pypi
 poetry publish
 ```
 Este comando te pedirá tus credenciales de PyPI (si no están ya almacenadas) y luego subirá los archivos de distribución a PyPI.
+
+### Configurar credenciales de PiPy
+Para configurar la github actions, debemos de añadir la clave secreta en la configuración del repositorio bajo el nombre `PYPI_API_TOKEN`.
+Este token lo sacamos tras haber configurado nuestra cuenta de pipy.
+
+## Configurar Codecov y ReadTheDocs
+A través de la página de la aplicación [CodeCov](https://app.codecov.io/) y [ReadTheDocs](https://readthedocs.org/) podemos configurar los repositorios bajo nuestro usuario de github para que sean monitorizados por estos servicios.
+
+## Configurar los badges:
+Tomando las primeras lineas de este README.md de muestra, podemos reemplazar los valores de nuestro template, por los de nuestro proyecto deseado de forma intuitiva.
 
