@@ -26,9 +26,8 @@ jobs:
               pip3 install pytest
 
       - name: test
-        run: poetry run coverage run -m --source=python_poetry_template pytest tests && poetry run coverage report -m
-
-
+        run: poetry run task coverage
+        
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         with:
